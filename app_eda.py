@@ -15,3 +15,5 @@ def run_eda() :
     st.pyplot(fig1)
 
     st.text('리뷰의 길이가 가장 긴 데이터')
+
+    st.dataframe(df.loc[ df['length'] == df['length'].max(), ])
