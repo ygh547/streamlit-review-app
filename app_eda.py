@@ -4,6 +4,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def run_eda() :
-    df = pd.read_csv('dara/review2.csv')
+    df = pd.read_csv('data/review2.csv', index_col=0)
 
     st.dataframe(df)
